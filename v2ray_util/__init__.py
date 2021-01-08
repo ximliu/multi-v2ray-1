@@ -1,3 +1,9 @@
-__version__ = '3.7.7.9'
+__version__ = '3.9.0.2'
+
+import sys
+if "xray" in sys.argv[0]:
+    run_type = 'xray'
+else:
+    run_type = 'v2ray'
 
 from .util_core.trans import _
